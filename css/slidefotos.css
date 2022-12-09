@@ -1,0 +1,203 @@
+/* responsiveslide css */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+/*  fin */
+
+.contenedor_slider {
+  position: relative;
+  margin:auto;
+}
+.contenedor_slider img{
+    height:700px;
+    object-fit:cover;
+}
+.contenedor_slider ul {
+    margin:0px;
+}
+
+.caption {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+}
+.caption p {
+  color: #613c6d;
+  font-size: x-large;
+  font-style: italic;
+  padding: 0px 0px 15px 0px;
+}
+.caption span {
+  color: black;
+  font-size: xx-large;
+  line-height: 45px;
+  text-align: left;
+}
+.caption a {
+  padding: 15px 30px;
+  background-color: #613c6d;
+  color: white;
+  text-decoration: none;
+}
+.callbacks_nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 55px;
+  width: 35px;
+  background: transparent url("../img/izquierda-y-derecha.png") no-repeat left top;
+  margin-top: -45px;
+}
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+
+@media screen and (max-width: 480px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .ancho{
+    max-width: 480px;
+    margin: auto;
+  }
+  /* responsiveslide css */
+  .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    }
+
+/*  fin */
+
+  .contenedor_slider {
+    position: relative;
+    margin:auto;
+  }
+  .contenedor_slider img{
+      height:400px;
+      object-fit:cover;
+  }
+  .contenedor_slider ul {
+      margin:0px;
+  }
+
+  .caption {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    width: 60%;
+  }
+  .caption p {
+    color: #613c6d;
+    font-size: x-large;
+    font-style: italic;
+    padding: 0px 0px 15px 0px;
+  }
+  .caption span {
+    color: black;
+    font-size: xx-large;
+    line-height: 45px;
+    text-align: left;
+  }
+  .caption a {
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: #613c6d;
+    color: white;
+    text-decoration: none;
+  }
+  .callbacks_nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 55px;
+    width: 35px;
+    background: transparent url("../img/izquierda-y-derecha.png") no-repeat left top;
+    margin-top: -45px;
+  }
+  .callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+  }
+  /* responsiveslide css */
+}
